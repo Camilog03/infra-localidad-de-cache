@@ -14,13 +14,22 @@ const int N = 2048;
 
 // TODO: sumar todos los elementos recorriendo fila por fila.
 long por_filas(const vector<long> &m) {
+  
   long suma = 0;
+  for (size_t j  = 0; j <= m.size() ; j++){
+    suma += m[j];
+  }
   return suma;
 }
 
 // TODO: sumar todos los elementos recorriendo columna por columna.
 long por_columnas(const vector<long> &m) {
   long suma = 0;
+  for (size_t i  = 0; i < N; i++){
+     for(size_t j = 0; j< N; j++){
+       suma += m[i*N+j];
+     }
+  }
   return suma;
 }
 

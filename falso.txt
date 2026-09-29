@@ -1,0 +1,2 @@
+pegados 1645 ms suma 200000000
+separados 13 ms suma 200000000
